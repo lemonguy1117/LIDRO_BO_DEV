@@ -1,0 +1,16 @@
+{ #layout_base_header }
+관리자 메인 페이지<br />
+<a href="/{admin_url}/auth/proc/sign_out{url_suffix}">로그아웃</a>
+
+<div id="message"></div>
+
+<script>
+    var div = document.getElementById('message');
+
+    if (location.protocol == 'https:') {
+        div.innerHTML = "<h1>HTTPS 사용중 :)</h1>";
+    } else {
+        div.innerHTML = "<h1>HTTP 사용중 :)</h1>";
+    }
+</script>
+{ #layout_base_footer }

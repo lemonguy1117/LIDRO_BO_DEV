@@ -1,0 +1,25 @@
+<form id="{frm_name_string}" action="/{admin_url}/auth/proc/sign_in{url_suffix}" method="post">
+    <fieldset>
+        <label>
+            <span>
+                <input type="text" id="acmg_id" name="acmg_id" class="form-control" placeholder="관리자 아이디" value="{? save_id}{save_id}{:}20ftadmin{/}" />
+            </span>
+        </label>
+
+        <label>
+            <span>
+                <input type="password" id="acmg_pw" name="acmg_pw" class="form-control" placeholder="관리자 패스워드" value="setcilockr" />
+            </span>
+        </label>
+        <div>
+            <label>
+                <input type="checkbox" id="save_id" name="save_id" class="chk" />
+                <span class="lbl"> 아이디 저장</span>
+            </label>
+
+            <button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
+                <span class="bigger-110">로그인</span>
+            </button>
+        </div>
+    </fieldset>
+</form> 
